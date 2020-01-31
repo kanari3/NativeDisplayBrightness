@@ -1,3 +1,6 @@
+# Feature
+You can control brightness with F9 and F10
+
 # NativeDisplayBrightness
 
 *Control your desktop monitor brightness just like on a MacBook!*
