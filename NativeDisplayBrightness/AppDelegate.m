@@ -45,7 +45,7 @@ CGEventRef keyboardCGEventCallback(CGEventTapProxy proxy,
     if (type == NX_KEYDOWN || type == NX_KEYUP || type == NX_FLAGSCHANGED)
     {
         int64_t keyCode = CGEventGetIntegerValueField(event, kCGKeyboardEventKeycode);
-        if (keyCode == kVK_F2 || keyCode == kVK_F1)
+        if (keyCode == kVK_F9 || keyCode == kVK_F10)
         {
             return NULL;
         }
@@ -102,7 +102,7 @@ CGEventRef keyboardCGEventCallback(CGEventTapProxy proxy,
 {
     [NSEvent addGlobalMonitorForEventsMatchingMask:NSEventMaskKeyDown | NSEventMaskKeyUp handler:^(NSEvent *_Nonnull event) {
         //NSLog(@"event!!");
-        if (event.keyCode == kVK_F1)
+        if (event.keyCode == kVK_F9)
         {
             if (event.type == NSEventTypeKeyDown)
             {
@@ -111,7 +111,7 @@ CGEventRef keyboardCGEventCallback(CGEventTapProxy proxy,
                 });
             }
         }
-        else if (event.keyCode == kVK_F2)
+        else if (event.keyCode == kVK_F10)
         {
             if (event.type == NSEventTypeKeyDown)
             {
