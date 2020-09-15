@@ -16,7 +16,7 @@
 #pragma mark - constants
 
 static NSString *brightnessValuePreferenceKey = @"brightness";
-static const float brightnessStep = 100/16.f;
+static const float brightnessStep = 100/48.f;
 
 #pragma mark - variables
 
